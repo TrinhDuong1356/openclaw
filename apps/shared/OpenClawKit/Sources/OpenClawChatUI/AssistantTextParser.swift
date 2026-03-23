@@ -18,7 +18,7 @@ enum AssistantTextParser {
         guard raw.contains("<") else {
             return [AssistantTextSegment(kind: .response, text: trimmed)]
         }
-// a
+
         var segments: [AssistantTextSegment] = []
         var cursor = raw.startIndex
         var currentKind: AssistantTextSegment.Kind = .response
